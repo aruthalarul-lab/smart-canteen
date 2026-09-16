@@ -71,7 +71,7 @@
             const menuContainer = document.getElementById('live-menu-list');
             menuContainer.innerHTML = ""; // Clear old visual list
 
-            -- SORTING LOGIC: True (Available) bubbles up, False (Sold Out) sinks down
+            // SORTING LOGIC: True (Available) bubbles up, False (Sold Out) sinks down
             const sortedMenu = [...myGarmentCanteenMenu].sort((a, b) => b.available - a.available);
 
             sortedMenu.forEach(item => {
